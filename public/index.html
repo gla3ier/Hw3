@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="hw3.css">
+    <title>科技新報</title>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAOyBjqCupDTNQ78YG93ifJy0Nnl4M2Rkk",
+        authDomain: "hw3-102501056.firebaseapp.com",
+        databaseURL: "https://hw3-102501056.firebaseio.com",
+        projectId: "hw3-102501056",
+        storageBucket: "hw3-102501056.appspot.com",
+        messagingSenderId: "608439319857"
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div id="article" class="col-xs-9">
+
+                <div id="title">
+                    <h1>聯合國大學研究：東亞與東南亞電子垃圾 5 年內激增 63%</h1>
+
+                    <p id="one">作者 藍 弋丰 | 發布日期 2017 年 01 月 26 日 13:50 | 分類 環境科學 , 生態保育</p>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-danger" id="butn1" onclick="sizes()">小</button>
+                        <button type="button" class="btn btn-warning" id="butn1" onclick="sizem()">中</button>
+                        <button type="button" class="btn btn-primary" id="butn1" onclick="sizel()">大</button>
+                    </div>
+                </div>
+                <br>
+                <div id="article_img">
+                    <img id="article_image" alt="reuse">
+                </div>
+                <br>
+
+                <p id="parag1" onmouseover="starstar(this)"   onmouseout="taltal(this)">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消費性電子產品日新月異，在近年來創造許多商機，但無可避免的最終會成為電子垃圾，聯合國大學研究發現，從 2010 年到 2015 年，東亞與東南亞的電子垃圾大增 63%，不論總量還是人均垃圾量都大為增長。 此次「區域電子垃圾監測：東亞與東南亞」（Regional E-waste Monitor: East
+                    and Southeast Asia）報告由聯合國大學的永續回收計畫（Sustainable Cycles）主導，並由日本環境部資助進行，其中許多研究資料也來自日本環境部先前資助進行的許多國際研究與行動。</p>
+                <br>
+                <br>
+                <p id="parag2" onmouseover="starstar(this)" onmouseout="taltal(this)">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;報告追蹤亞洲 12 個國家的電子垃圾處理狀況：柬埔寨、中國、香港、印尼、日本、馬來西亞、菲律賓、新加坡、南韓、台灣、泰國、越南。其中，台灣與日本、南韓被列為第一級的先進國家；新加坡與香港被列為第二級的自願回收處理國家；中國、馬來西亞、菲律賓、越南被列為第三級轉型期國家；柬埔寨、印尼、泰國則列為第四級的非正式處理國家。</p>
+                <br>
+                <p id="parag3" onmouseover="starstar(this)" onmouseout="taltal(this)">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;亞洲電子垃圾成長量過去就高於全球，2007 年到 2012 年，全球電子垃圾年產生總量從 5,133 萬噸增加至 5,656 萬噸，增加 10%，亞洲卻從 2,062 萬噸增加至 2,669 萬噸，增加 29%，增速將近全球的 3 倍。</p>
+
+                <br>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;回收不夠方便</h3>
+                <br>
+
+                <p id="parag4" onmouseover="starstar(this)" onmouseout="taltal(this)">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;研究發現，受到東南亞國家收入增長，以及各國對消費性電子產品需求大增的雙重影響，12 國的電子垃圾量在 2010 到 2015 年平均增加高達 63%，達 1,230 萬噸，約相當於吉薩大金字塔的 2.4 倍重。2015 年平均每人生產垃圾量約為 10 公斤，其中上下落差相當大，每人每年生產垃圾量最多的是香港的21.7 公斤、新加坡的 19.95 公斤，以及台灣的 19.13 公斤；最少的則是柬埔寨的 1.1 公斤，越南的 1.34 公斤，以及菲律賓的 1.35 公斤。 電子垃圾有幾種去處，首先是二手使用，用到壞掉，可「殺肉」做為維修零件來源，或是修復為整新機二手賣出；完全淘汰的，則可回收材料的原物料與能源，然而，全球每年約 5,000 萬噸電子垃圾中，只有 650 萬噸資源回收，其他的都進了掩埋場。而回收與掩埋過程若為了節省成本而任意處理，如東南亞經常有燃燒電線皮等做法，將造成嚴重環境污染。東亞與東南亞如今是全球電子供應鏈重鎮，不僅消費也生產全球的電子產品，因此電子垃圾問題更是嚴重，而龐大的生產鏈與需求結合，也使二手機、整新機、原物料回收市場相當龐大，但是在 12 國之中，目前只有 5 國通過電子垃圾相關立法，各國社會多數缺乏對電子垃圾的認知，供應鏈也沒有適當的相關回報體系，政府中也缺乏分析相關資料的人力，甚至對電子垃圾定義都不清。 電子垃圾增加的原因很容易理解，全球生產鏈進口更多的消費性電子產品供給各國更多消費者購買，換機越來越頻繁，自然垃圾就更多了。然而回收卻沒有跟著成長，主因是社會對電子垃圾問題缺乏認知，政府也沒有提供補貼誘因，回收又不夠方便，能安全回收電子產品的設施設備不足，以及政府對電子垃圾問題的管理不當、執法不夠嚴格，許多電子產品非法回收，露天燃燒，或是在非法家庭工廠進行粗糙的回收手段造成毒水橫流。聯合國大學研究團隊呼籲各國政府正視電子垃圾問題，並制定正確的完善政策來防止電子垃圾污染環境。台灣近年來積極推動電子廢棄物回收，在 12 國當中，被列為和日韓同級的先進國家，不過台灣的電子垃圾處理也還有改進的空間，台灣可與東亞、東南亞鄰國共同努力解決電子垃圾問題，保護地球環境免遭到破壞。</p>
+                <br>
+                <br>
+                <br>
+                <div id="tailreading">
+                    <i>延伸閱讀</i>
+                    <ul>
+                        <li>
+                            <a href="https://unu.edu/media-relations/releases/e-waste-in-east-and-south-east-asia-jumps-63-percent-in-five-years.html">E-Waste in East and South-East Asia Jumps 63% in Five Years</a>
+                        </li>
+                        <li>
+                            <a href="http://money.cnn.com/2017/01/16/technology/e-waste-asia-increase-problem/index.html">Gadget trash is piling up in Asia</a>
+                        </li>
+                    </ul>
+                    <p>（首圖來源：Flickr/baselactionnetwork CC BY 2.0） </p>
+                </div>
+
+
+
+
+                <div id="table1">
+                    <table>
+                        <tr>
+                            <td>參考資料名稱</td>
+                            <td>網站</td>
+                        </tr>
+                        <tr>
+                            <td>聯合國大學研究：東亞與東南亞電子垃圾 5 年內激增 63%</td>
+                            <td><a href="http://technews.tw/2017/01/26/gadget-trash-is-piling-up-in-asia">http://technews.tw/2017/01/26/gadget-trash-is-piling-up-in-asia</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="back_to_top" type="button" class="btn btn-warning" onclick="batotop()">Top</button>
+                <br>
+                <br>
+                <br>
+
+            </div>
+
+            <div id="ad_float" class="col-xs-3">
+                <table>
+                    <tr>
+                        <td>
+                            <img id="ad1" alt="cereal" class="ad_float_td">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <img id="ad2" alt="pazzo" class="ad_float_td">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="hw3.js"></script>
+
+
+</body>
+
+</html>

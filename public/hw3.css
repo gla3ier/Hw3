@@ -1,0 +1,58 @@
+body {
+    background-color: rgba(228, 200, 171, 0.59);
+}
+
+#one {
+    font-family: PMingLiU;
+    font-size: 13px;
+    color: #642100;
+    font-weight: lighter;
+}
+
+#title {
+    line-height: 0.5;
+    letter-spacing: normal;
+}
+
+#article_img {
+    text-align: center;
+}
+
+p {
+    line-height: 3;
+    font-size: 16px;
+}
+
+h3 {
+    color: rgb(166, 13, 13);
+}
+
+#table1 table {
+    width: 100% border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+#table1 tr, #table1 td {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.ad_float_td {
+    width: 100%;
+    height: auto;
+}
+
+.small {
+    font-size: 16px;
+}
+
+.medium {
+    font-size: 20px;
+}
+
+.large {
+    font-size: 24px;
+}
+
+#back_to_top {
+    color: rgb(0, 0, 0);
+}
